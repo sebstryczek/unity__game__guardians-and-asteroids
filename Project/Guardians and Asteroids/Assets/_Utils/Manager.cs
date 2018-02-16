@@ -7,7 +7,6 @@ public abstract class Manager<T> : Singleton<T> where T : MonoBehaviour
     public void Init()
     {
         if (this.isInit) return;
-        if (Config.Instance.IsDevelopment) Debug.Log(this.GetType() + ".Init()");
         this.Initializer();
         this.isInit = true;
     }
