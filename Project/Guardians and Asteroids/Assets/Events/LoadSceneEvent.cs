@@ -2,11 +2,14 @@
 using Object = UnityEngine.Object;
 using UnityEngine.SceneManagement;
 
-[CreateAssetMenu(fileName = "LoadSceneEvent", menuName = "GameEvents/LoadSceneEvent", order = 0)]
+[CreateAssetMenu(fileName = "LoadSceneEvent", menuName = "ScriptableObjects/LoadSceneEvent", order = 0)]
 public class LoadSceneEvent : ScriptableObject
 {
-    public void LoadScene(Object obj)
+    [SerializeField]
+    private SceneField scene;
+
+    public void Load()
     {
-        SceneManager.LoadScene(obj.name);
+        SceneManager.LoadScene(scene.SceneName);
     }
 }

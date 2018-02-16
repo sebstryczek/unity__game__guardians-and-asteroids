@@ -9,5 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d117cc0f4a4c0cf4db09c019f142cb43, type: 3}
-  m_Name: LoadSceneEvent
+  m_Name: 1-LoadMenu
   m_EditorClassIdentifier: 
+  scene:
+    m_SceneAsset: {fileID: 102900000, guid: 8f995bb3bcd591e41a855ac074884f50, type: 3}
+    m_SceneName: Menu
